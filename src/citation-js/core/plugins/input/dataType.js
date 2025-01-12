@@ -5,7 +5,7 @@ export function typeOf(thing) {
     case null:
       return 'Null'
     default:
-      return thing.constructor.name
+      return thing.constructor?.name
   }
 }
 export function dataTypeOf(thing) {
